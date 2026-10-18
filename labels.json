@@ -1,0 +1,10 @@
+[
+  {"name": "critical", "color": "B60205", "description": "Severity: alarm does not ring or stop, data loss, crash on launch"},
+  {"name": "high", "color": "D93F0B", "description": "Severity: a Must feature is broken"},
+  {"name": "medium", "color": "FBCA04", "description": "Severity: works with a workaround"},
+  {"name": "low", "color": "0E8A16", "description": "Severity: cosmetic or minor"},
+  {"name": "android", "color": "3DDC84", "description": "Platform: Android only"},
+  {"name": "iphone", "color": "5319E7", "description": "Platform: iPhone only"},
+  {"name": "both-platforms", "color": "1D76DB", "description": "Platform: Android and iPhone"},
+  {"name": "needs-triage", "color": "EDEDED", "description": "New bug, not yet reviewed"}
+]

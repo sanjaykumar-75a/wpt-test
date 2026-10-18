@@ -1,0 +1,88 @@
+name: Bug report
+description: Report a bug found while testing WPT 202
+title: "[BUG] "
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use dummy data only in text and screenshots. No real names, numbers, emails or account details.
+  - type: input
+    id: prd_ref
+    attributes:
+      label: PRD reference
+      description: Requirement ID or section, e.g. FR-AL-23 or 9.7
+      placeholder: FR-AL-23
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the app
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Android
+        - iPhone
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone brand and model
+      placeholder: Samsung Galaxy A14
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: Android / iOS version
+      placeholder: Android 13
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App build / version
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Suggested severity
+      description: Critical = alarm does not ring or stop, data loss, crash on launch. High = a Must feature is broken. Medium = works with a workaround. Low = cosmetic.
+      options:
+        - critical
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or screen recording
+      description: Drag the file here. Dummy data only.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
